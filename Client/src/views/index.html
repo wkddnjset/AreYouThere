@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>:: AreYouThere ::</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <link href='../static/lib/fullcalendar-3.9.0/fullcalendar.min.css' rel='stylesheet' />
+    <link href='../static/lib/fullcalendar-3.9.0/fullcalendar.print.min.css' rel='stylesheet' media='print' />
+    <link href='../static/css/style.css' rel='stylesheet' />
+    <link href='../static/css/NotoSansKR-Hestia.css' rel='stylesheet' />
+
+    <script src='../static/lib/fullcalendar-3.9.0/lib/moment.min.js'></script>
+    <script src='../static/lib/fullcalendar-3.9.0/lib/jquery.min.js'></script>
+    <script src='../static/lib/fullcalendar-3.9.0/fullcalendar.min.js'></script>
+    <script src='../static/lib/device-uuid.js'></script>
+    <!-- Config 파일 -->
+    <script src='../controllers/Config.js'></script>
+    <script src='../controllers/Every30min/common.js'></script>
+</head>
+<body>
+
+  <!-- 달력 -->
+  <div id='calendar'></div>
+  <script src='../controllers/fullcalendar.js'></script>
+
+  <!-- 오늘 작업 디테일 -->
+  <div id="detail">
+    <span class="dt-today"></span><span class="dt-today-sm"></span>
+    <hr>
+    <div style="width: 90%;margin: auto;">
+      <div class="all-timeline">
+        <span class="timeval">06</span>
+        <span class="timeline"></span>
+
+        <span id="time_1" class="work"></span>
+        <span id="time_2" class="work"></span>
+        <span id="time_3" class="work"></span>
+        <span id="time_4" class="work"></span>
+        <span id="time_5" class="work"></span>
+        <span id="time_6" class="work"></span>
+        <span id="time_7" class="work"></span>
+        <span id="time_8" class="work"></span>
+        <span id="time_9" class="work"></span>
+        <span id="time_10" class="work"></span>
+        <span id="time_11" class="work"></span>
+        <span id="time_12" class="work"></span>
+        
+        <span class="timeval">12</span>
+        <span class="timeline"></span>
+        <span id="time_13" class="work"></span>
+        <span id="time_14" class="work"></span>
+        <span id="time_15" class="work"></span>
+        <span id="time_16" class="work"></span>
+        <span id="time_17" class="work"></span>
+        <span id="time_18" class="work"></span>
+        <span id="time_19" class="work"></span>
+        <span id="time_20" class="work"></span>
+        <span id="time_21" class="work"></span>
+        <span id="time_22" class="work"></span>
+        <span id="time_23" class="work"></span>
+        <span id="time_24" class="work"></span>
+        
+        <span class="timeval">18</span>
+        <span class="timeline"></span>
+        <span id="time_25" class="work"></span>
+        <span id="time_26" class="work"></span>
+        <span id="time_27" class="work"></span>
+        <span id="time_28" class="work"></span>
+        <span id="time_29" class="work"></span>
+        <span id="time_30" class="work"></span>
+        <span id="time_31" class="work"></span>
+        <span id="time_32" class="work"></span>
+        <span id="time_33" class="work"></span>
+        <span id="time_34" class="work"></span>
+        <span id="time_35" class="work"></span>
+        <span id="time_36" class="work"></span>
+        
+        <span class="timeval">24</span>
+        <span class="timeline"></span>
+        <span id="time_37" class="work"></span>
+        <span id="time_38" class="work"></span>
+        <span id="time_39" class="work"></span>
+        <span id="time_40" class="work"></span>
+        <span id="time_41" class="work"></span>
+        <span id="time_42" class="work"></span>
+        <span id="time_43" class="work"></span>
+        <span id="time_44" class="work"></span>
+        <span id="time_45" class="work"></span>
+        <span id="time_46" class="work"></span>
+        <span id="time_47" class="work"></span>
+        <span id="time_48" class="work"></span>
+      </div>
+      <div class="work-hour"><span></span></div>
+    </div>
+  </div>
+  <script>
+    $('.dt-today-sm').text(m.format('ddd'));
+    $('.dt-today').text(m.format('MM.DD'));
+  </script>
+  <script src='../controllers/sweetalert.min.js'></script>
+  <script src='../controllers/User/CreateUser.js'></script>
+</body>
+</html>
